@@ -750,7 +750,7 @@ dd {
 }
 
 .large-margin-bottom {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .alternate-background {
@@ -1032,6 +1032,12 @@ caption {
 /**
  * Layout
  */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
 .page-grid {
   display: grid;
   width: 100%;
@@ -1251,11 +1257,6 @@ footer {
   .footer-right {
     text-align: right;
   }
-}
-
-.social-icons a {
-  font-size: 2.5rem;
-  margin: 0 1.5rem;
 }
 
 :root {
@@ -2906,32 +2907,98 @@ body {
   grid-column-end: -1;
 }
 
-.contact {
-  margin-bottom: 10rem;
+.homepage-gallery {
+  display: grid;
+  grid-gap: 1rem;
 }
+@media screen and (min-width: 550px) {
+  .homepage-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 10rem;
+    grid-auto-flow: dense;
+    width: 100%;
+  }
+  .homepage-gallery .medium {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  .homepage-gallery .large {
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+}
+@media screen and (min-width: 700px) {
+  .homepage-gallery {
+    grid-auto-rows: 14rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .homepage-gallery {
+    grid-gap: 2rem;
+    grid-auto-rows: 16rem;
+  }
+}
+
+.about-image {
+  border-radius: 20rem;
+  width: 100%;
+  max-width: 16rem;
+  display: block;
+  margin: 2rem auto;
+}
+@media screen and (min-width: 768px) {
+  .about-image {
+    margin: 1rem;
+    float: right;
+  }
+}
+
 .contact h3 {
   margin-bottom: 0.1em;
 }
 
+.social-icons a {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+}
+
 .about-shards,
+.shop-shards,
 .contact-shards {
   position: absolute;
-  top: -30rem;
-  max-width: 100%;
   z-index: -10;
+  max-width: 100%;
   width: 20rem;
 }
 @media screen and (min-width: 700px) {
   .about-shards,
+.shop-shards,
 .contact-shards {
     width: 22rem;
   }
 }
 @media screen and (min-width: 870px) {
   .about-shards,
+.shop-shards,
 .contact-shards {
     width: 29rem;
     top: -18rem;
+  }
+}
+
+.about-shards,
+.shop-shards {
+  top: -30rem;
+}
+
+.contact-shards {
+  top: 0rem;
+  right: -15rem;
+}
+@media screen and (min-width: 600px) {
+  .contact-shards {
+    right: 0;
+    width: 20rem;
   }
 }
 
@@ -2939,7 +3006,7 @@ body {
   left: 0;
 }
 
-.contact-shards {
+.shop-shards {
   right: 0;
 }
 
