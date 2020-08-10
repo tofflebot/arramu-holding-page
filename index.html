@@ -10,27 +10,24 @@
   </head>
   <body>
     <header> 
-      <div class="medium-container header-container"><img class="header-logo" src="images/arramu-logo-simple.png" alt="arramu-logo">
-        <div class="nav-background"></div>
-        <button class="mobile-nav-open-button"><i class="fas fa-bars">   </i></button>
+      <div class="medium-container header-container"><a href="#top"><img class="header-logo" src="images/arramu-logo-simple.png" alt="arramu-logo"></a>
         <nav>
-          <button class="mobile-nav-close-button"><i class="fas fa-times"></i></button>
           <ul>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="header-buffer"></div>
+    <div class="header-buffer" id="top"></div>
     <div class="page-grid">
       <div class="content text-center"><img class="large-logo margin-bottom margin-top" src="images/arramu-logo.png" alt="Arramu logo">
         <div class="site-description">
           <p>Hand crafted slate art & original prints, made with love in Wales</p>
         </div>
       </div>
-      <div class="content margin-bottom">
+      <div class="content large-margin-bottom">
         <div class="grid small-col">
           <div class="image-container"><img class="object-fit-cover" src="images/primary-image-1.png" alt="Some carved slate with tools"></div>
           <div class="image-container"><img class="object-fit-cover" src="images/primary-image-2.jpg" alt="Some printed cards in different colours"></div>
@@ -40,16 +37,16 @@
     <div class="page-grid">   <img class="about-shards" src="images/shards-from-left.png" alt="shards">
       <div class="content margin-bottom text-center">
         <div class="homepage-gallery large-margin-bottom">
-          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-1.jpg" alt="alt"></div>
-          <div class="image-container medium"><img class="object-fit-cover" src="images/gallery-image-2.jpg" alt="alt"></div>
-          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-3.jpg" alt="alt"></div>
-          <div class="image-container large"><img class="object-fit-cover" src="images/gallery-image-4.jpg" alt="alt"></div>
-          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-5.jpg" alt="alt"></div>
-          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-6.jpg" alt="alt"></div>
-          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-7.jpg" alt="alt"></div>
-          <div class="image-container medium"><img class="object-fit-cover" src="images/gallery-image-8.jpg" alt="alt"></div>
-          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-9.jpg" alt="alt"></div>
-          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-10.jpg" alt="alt"></div>
+          <div class="image-container medium"><img class="object-fit-cover" src="images/gallery-image-2.jpg" alt="Some Ammaru carved slate art"></div>
+          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-11.jpg" alt="Some Ammaru carved slate art"></div>
+          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-10.jpg" alt="Some Ammaru carved slate art"></div>
+          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-3.jpg" alt="Some Ammaru carved slate art"></div>
+          <div class="image-container large"><img class="object-fit-cover" src="images/gallery-image-4.jpg" alt="Some Ammaru carved slate art"></div>
+          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-6.jpg" alt="Some Ammaru carved slate art"></div>
+          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-7.jpg" alt="Some Ammaru carved slate art"></div>
+          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-1.jpg" alt="Some Ammaru carved slate art"></div>
+          <div class="image-container medium"><img class="object-fit-cover" src="images/gallery-image-8.jpg" alt="Some Ammaru carved slate art"></div>
+          <div class="image-container"><img class="object-fit-cover" src="images/gallery-image-9.jpg" alt="Some Ammaru carved slate art"></div>
         </div>
         <figure class="rounded-corners homepage-video">
           <div class="plyr__video-embed" id="player">
@@ -60,36 +57,42 @@
     </div>
     <div class="page-grid"><img class="shop-shards" src="images/shards-from-right.png" alt="shards">
       <div class="content margin-bottom">
-        <h2 class="text-center">Shop</h2>
-        <div class="grid large-col-auto-fill large-margin-bottom">
+        <h2 class="text-center" id="shop">Shop</h2>
+        <div class="grid large-col-auto-fill margin-bottom">
           <div>
             <p>Online shop coming soon! In the meantime if you’d like to place an order or make an enquiry please use the links below to get in touch and we will come back to you to take your details. </p>
           </div>
         </div>
         <div class="text-center">
-          <h3>Greetings cards</h3><img class="responsive-image" src="images/greetings-cards.jpg" style="width: 100%; max-width: 30rem">
-          <p>£3 each / 4 for £10 </p><a class="button" href="mailto:hello@arramu.com" target="blank">Buy greetings cards</a>
-          <h3>Slate art</h3>
-          <p>We have a number of different slate pieces available with prices on request. Get in touch to see what we currently have available. </p>
-          <div class="grid small-col margin-bottom">
-            <div class="image-container"><img class="object-fit-cover" src="images/slate-for-sale-1.jpg"></div>
-            <div class="image-container"><img class="object-fit-cover" src="images/slate-for-sale-2.jpg"></div>
+          <div class="margin-bottom">
+            <h3>Greetings cards</h3><img class="responsive-image" src="images/greetings-cards.jpg" style="width: 100%; max-width: 30rem">
+            <p>£3 each / 4 for £10 </p><a class="button" href=" mailto:hello@arramu.com?subject=Greetings%20Cards%20Order&amp;body=Thank%20you%20for%20contacting%20Arramu%20to%20order%20some%20greetings%20cards!%20Please%20write%20in%20this%20email%20how%20many%20you%20would%20like%20and%20your%20postal%20address%2C%20and%20we'll%20come%20back%20to%20as%20soon%20as%20we%20can%20to%20take%20your%20details%20%3A)" target="blank">Buy greetings cards</a>
           </div>
-          <div class="grid small-col margin-bottom">
-            <div class="image-container"><img class="object-fit-cover" src="images/slate-for-sale-3.jpg"></div>
-            <div class="image-container"><img class="object-fit-cover" src="images/slate-for-sale-4.jpg"></div>
-          </div><a class="button" href="mailto:hello@arramu.com" target="blank">Enquire now</a>
-          <h3>Commissions</h3>
-          <p>We are available for personalised commissions for your business or home. We would love to hear about your ideas and requirements and see how we can help.</p>
-          <div class="grid small-col margin-bottom">
-            <div class="image-container"> <img class="object-fit-cover" src="images/commissions-1.jpg"></div>
-            <div class="image-container"> <img class="object-fit-cover" src="images/commissions-2.png"></div>
-          </div><a class="button" href="mailto:hello@arramu.com" target="blank">Enquire now</a>
+          <div class="margin-bottom">
+            <h3>Slate art</h3>
+            <p>We have a number of different slate pieces available with prices on request. Get in touch to see what we currently have available. </p>
+            <div class="grid small-col margin-bottom">
+              <div class="image-container"><img class="object-fit-cover" src="images/slate-for-sale-1.jpg"></div>
+              <div class="image-container"><img class="object-fit-cover" src="images/slate-for-sale-2.jpg"></div>
+            </div>
+            <div class="grid small-col margin-bottom">
+              <div class="image-container"><img class="object-fit-cover" src="images/slate-for-sale-3.jpg"></div>
+              <div class="image-container"><img class="object-fit-cover" src="images/slate-for-sale-4.jpg"></div>
+            </div><a class="button" href=" mailto:hello@arramu.com?subject=Slate%20art%20enquiry&amp;body=Thank%20you%20for%20enquiring%20about%20purchasing%20some%20slate%20art%20from%20Arramu!%20Please%20let%20us%20know%20what%20you%20are%20looking%20for%20in%20this%20email%20and%20we'll%20come%20back%20to%20you%20as%20soon%20as%20we%20can%20%3A) " target="blank">Enquire now</a>
+          </div>
+          <div class="margin-bottom">
+            <h3>Commissions</h3>
+            <p>We are available for personalised commissions for your business or home. We would love to hear about your ideas and requirements and see how we can help.</p>
+            <div class="grid small-col margin-bottom">
+              <div class="image-container"> <img class="object-fit-cover" src="images/commissions-1.jpg"></div>
+              <div class="image-container"> <img class="object-fit-cover" src="images/commissions-2.png"></div>
+            </div><a class="button" href=" mailto:hello@arramu.com?subject=Slate%20art%20enquiry&amp;body=Thank%20you%20for%20enquiring%20about%20making%20a%20commission%20from%20Arramu!%20Please%20give%20us%20a%20little%20bit%20of%20information%20in%20this%20email%20about%20what%20you%20are%20looking%20for%20and%20we'll%20come%20back%20to%20you%20as%20soon%20as%20we%20can%20%3A) " target="blank">Enquire now</a>
+          </div>
         </div>
       </div>
       <div class="content margin-bottom">
         <div class="text-center">
-          <h2>About</h2>
+          <h2 id="about">About</h2>
         </div>
         <div><img class="about-image" src="images/about.jpg">
           <p>Jonny Scarramuzza is a father of two working from his family home nestled in the Tanat Valley in Mid Wales. His love of art began as a child and he spent much of his time drawing and painting. He went on to study art for both GCSE & A level before studying for a Bachelor of Arts at Southampton University.</p>
@@ -103,11 +106,11 @@
       <div class="content margin-bottom contact">
         <div class="grid large-col-auto-fill">
           <div>
-            <h2>Get in touch</h2>
-            <p>We'd love to hear from you</p>
-            <h3>Email</h3><a href="#">hello@arramu.com</a>
-            <h3>Phone</h3><a href="">+44 (0) 7880 077 600</a>
-            <div class="social-icons margin-top"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></div>
+            <h2 id="contact">Get in touch</h2>
+            <p>We'd love to hear from you.</p>
+            <h3>Email</h3><a href="mailto:hello@arramu.com">hello@arramu.com</a>
+            <h3>Phone</h3><a href="tel:+44-7880-077600">+44 (0) 7545 901 300</a>
+            <div class="social-icons margin-top"><a href="https://www.facebook.com/JonnyArramu/" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/jonny_scarramuzza/" target="_blank"><i class="fa fa-instagram"></i></a></div>
           </div>
         </div>
       </div>
@@ -118,7 +121,7 @@
           <div class="footer-left">
             <p> 	&copy; Arramu 2020</p>
           </div>
-          <div class="footer-right"><a href="#">↑ Back to top</a></div>
+          <div class="footer-right"><a href="#top">↑ Back to top</a></div>
         </div>
       </div>
     </footer>
