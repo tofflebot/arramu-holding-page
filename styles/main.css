@@ -2930,7 +2930,7 @@ html {
 
 .commissions-gallery {
   display: grid;
-  grid-gap: 0.8em;
+  grid-gap: 1rem;
 }
 .commissions-gallery .tall {
   grid-row: span 2;
