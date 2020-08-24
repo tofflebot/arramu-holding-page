@@ -22,11 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tofflebot/jonny-site.git"
+    "url": "git+https://github.com/tofflebot/arramu-holding-page.git"
   },
   "bugs": {
-    "url": "https://github.com/tofflebot/jonny-site/issues"
+    "url": "https://github.com/tofflebot/arramu-holding-page/issues"
   },
-  "homepage": "https://github.com/tofflebot/jonny-site#readme",
+  "homepage": "https://github.com/tofflebot/arramu-holding-page#readme",
   "description": ""
 }

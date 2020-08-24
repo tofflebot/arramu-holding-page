@@ -2,9 +2,15 @@ doctype
 html(lang='en')
     head
         meta(charset='utf-8')
-        //- TODO remove noindex
-        meta(name='robots' content='noindex')
         meta(name='viewport' content='width=device-width, initial-scale=1')
+        meta(name='description' content='Beautiful hand crafted slate art and prints, made with love in Wales. Unique pieces of slate art and hand printed greetings card available to buy. Commissions available for your home or business.')
+        meta(name='keywords' content='slate art, slate carving, Welsh art, greetings cards, handcrafted slate, slate to buy, slate commissions')
+        link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+        link(rel="manifest" href="/site.webmanifest")
+
+
 
         title Arramu
         block styles
@@ -14,43 +20,31 @@ html(lang='en')
     body
         header 
             .medium-container.header-container
-                img.header-logo(src="images/arramu-logo-simple.png", alt="arramu-logo")
-                .nav-background
-                button.mobile-nav-open-button
+                a(href="#top")
+                    img.header-logo(src="images/arramu-logo-simple.png", alt="arramu-logo")
+                //- .nav-background
+                //- button.mobile-nav-open-button
                     i.fas.fa-bars    
                 nav
-                    button.mobile-nav-close-button
+                    //- button.mobile-nav-close-button
                         i.fas.fa-times
                     ul
                         li
-                            a(href="#") About
+                            a(href="#shop") Shop
                         li
-                            a(href="#") Gallery
+                            a(href="#about") About
                         li
-                            a(href="#") Video
-                        li
-                            a(href="#") Contact
-                        li
-                            a(href="#") Shop
+                            a(href="#contact") Contact
         
-        .header-buffer
+        .header-buffer#top
         block content
         footer
             .medium-container
                 .footer-grid
                     .footer-left
                         p  	&copy; Arramu 2020
-                    .footer-right.social-icons
-                        a(href="#" target="_blank")
-                            i.fa.fa-facebook
-                        a(href="#" target="_blank")
-                            i.fa.fa-instagram
-                    .footer-left
-                        p
-                            a(href="#") About this site
                     .footer-right
-                        p Website by 
-                            a(href="#") Tom
+                        a(href="#top") ↑ Back to top
 
         block scripts
             script(src='https://cdn.plyr.io/3.6.2/plyr.polyfilled.js')

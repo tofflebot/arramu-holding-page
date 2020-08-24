@@ -2,6 +2,12 @@
  * Layout
  */
 
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
 .page-grid {
     display: grid;
     width: 100%;
