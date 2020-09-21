@@ -3,7 +3,10 @@ extends templates/layout.pug
 block content
     .page-grid
         .content.text-center
-            img.large-logo.margin-bottom.margin-top(src="images/arramu-logo.png", alt="Arramu logo")
+            picture
+                    source(srcset="images/arramu-logo-400.webp 400w, images/arramu-logo-800.webp 800w" type="image/webp")
+                    source(srcset="images/arramu-logo-400.png 400w, images/arramu-logo-800.png 800w" type="image/png")
+                    img.large-logo.margin-bottom.margin-top(src="images/arramu-logo.png", alt="Arramu logo")
             .site-description
                 p Hand crafted slate art & original prints, made with love in Wales
                 
@@ -11,9 +14,15 @@ block content
         .content.large-margin-bottom
             .grid.small-col
                 .image-container
-                    img.object-fit-cover(src="images/primary-image-1.jpg", alt="Some carved slate with tools")
+                    picture
+                        source(srcset="images/primary-image-1-300.webp 300w, images/primary-image-1-500.webp 500w, images/primary-image-1-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/primary-image-1-300.jpg 300w, images/primary-image-1-500.jpg 500w, images/primary-image-1-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/primary-image-1.jpg", alt="Some carved slate with tools")
                 .image-container
-                    img.object-fit-cover(src="images/primary-image-2.jpg", alt="Some printed cards in different colours")
+                    picture
+                        source(srcset="images/primary-image-2-300.webp 300w, images/primary-image-2-500.webp 500w, images/primary-image-2-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/primary-image-2-300.jpg 300w, images/primary-image-2-500.jpg 500w, images/primary-image-2-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/primary-image-2.jpg", alt="Some printed cards in different colours")
             
 
     .page-grid    
@@ -23,25 +32,55 @@ block content
             
             .homepage-gallery.large-margin-bottom
                 .image-container.medium
-                    img.object-fit-cover(src="images/gallery-image-11.jpg", alt="Printed patterned greetings cards")
+                    picture
+                        source(srcset="images/gallery-image-11-300.webp 300w, images/gallery-image-11-500.webp 500w, images/gallery-image-11-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/gallery-image-11-300.jpg 300w, images/gallery-image-11-500.jpg 500w, images/gallery-image-11-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/gallery-image-11.jpg", alt="Printed patterned greetings cards")
                 .image-container
-                    img.object-fit-cover(src="images/gallery-image-3.jpg", alt="Carved slate art with leaf art")
+                    picture
+                        source(srcset="images/gallery-image-3-300.webp 300w, images/gallery-image-3-500.webp 500w, images/gallery-image-3-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/gallery-image-3-300.jpg 300w, images/gallery-image-3-500.jpg 500w, images/gallery-image-3-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/gallery-image-3.jpg", alt="Carved slate art with leaf art")
                 .image-container
-                    img.object-fit-cover(src="images/gallery-image-10.jpg", alt="Printed patterned greetings cards")
+                    picture
+                        source(srcset="images/gallery-image-10-300.webp 300w, images/gallery-image-10-500.webp 500w, images/gallery-image-10-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/gallery-image-10-300.jpg 300w, images/gallery-image-10-500.jpg 500w, images/gallery-image-10-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/gallery-image-10.jpg", alt="Printed patterned greetings cards")
                 .image-container
-                    img.object-fit-cover(src="images/gallery-image-6.jpg", alt="Carved slate with intricate pattern")
+                    picture
+                        source(srcset="images/gallery-image-6-300.webp 300w, images/gallery-image-6-500.webp 500w, images/gallery-image-6-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/gallery-image-6-300.jpg 300w, images/gallery-image-6-500.jpg 500w, images/gallery-image-6-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/gallery-image-6.jpg", alt="Carved slate with intricate pattern")
                 .image-container
-                    img.object-fit-cover(src="images/gallery-image-2.jpg", alt="Carved slate art on a plinth with wooden background")
+                     picture
+                        source(srcset="images/gallery-image-2-300.webp 300w, images/gallery-image-2-500.webp 500w, images/gallery-image-2-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/gallery-image-2-300.jpg 300w, images/gallery-image-2-500.jpg 500w, images/gallery-image-2-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/gallery-image-2.jpg", alt="Carved slate art on a plinth with wooden background")
                 .image-container.large
-                    img.object-fit-cover(src="images/gallery-image-4.jpg", alt="Carved slate art")
+                    picture
+                        source(srcset="images/gallery-image-4-300.webp 300w, images/gallery-image-4-500.webp 500w, images/gallery-image-4-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/gallery-image-4-300.jpg 300w, images/gallery-image-4-500.jpg 500w, images/gallery-image-4-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/gallery-image-4.jpg", alt="Carved slate art")
                 .image-container
-                    img.object-fit-cover(src="images/gallery-image-5.jpg", alt="Carved slate art with floral pattern")
+                    picture
+                        source(srcset="images/gallery-image-5-300.webp 300w, images/gallery-image-5-500.webp 500w, images/gallery-image-5-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/gallery-image-5-300.jpg 300w, images/gallery-image-5-500.jpg 500w, images/gallery-image-5-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/gallery-image-5.jpg", alt="Carved slate art with floral pattern")
                 .image-container.medium
-                    img.object-fit-cover(src="images/gallery-image-1.jpg", alt="Three pieces of slate art with animals carved into them")
+                    picture
+                        source(srcset="images/gallery-image-1-300.webp 300w, images/gallery-image-1-500.webp 500w, images/gallery-image-1-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/gallery-image-1-300.jpg 300w, images/gallery-image-1-500.jpg 500w, images/gallery-image-1-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/gallery-image-1.jpg", alt="Three pieces of slate art with animals carved into them")
                 .image-container
-                    img.object-fit-cover(src="images/gallery-image-8.jpg", alt="Four printed greetings cards")
+                    picture
+                        source(srcset="images/gallery-image-8-300.webp 300w, images/gallery-image-8-500.webp 500w, images/gallery-image-8-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/gallery-image-8-300.jpg 300w, images/gallery-image-8-500.jpg 500w, images/gallery-image-8-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/gallery-image-8.jpg", alt="Four printed greetings cards")
                 .image-container
-                    img.object-fit-cover(src="images/gallery-image-9.jpg", alt="A paint roller with a patterned print block")
+                    picture
+                        source(srcset="images/gallery-image-9-300.webp 300w, images/gallery-image-9-500.webp 500w, images/gallery-image-9-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/gallery-image-9-300.jpg 300w, images/gallery-image-9-500.jpg 500w, images/gallery-image-9-1000.jpg 1000w" type="image/jpeg")
+                        img.object-fit-cover(src="images/gallery-image-9.jpg", alt="A paint roller with a patterned print block")
             
         
             figure.rounded-corners.homepage-video
@@ -56,35 +95,59 @@ block content
                 div
                     p Online shop coming soon! In the meantime if you’d like to place an order or make an enquiry please use the links below to get in touch and we will come back to you to take your details. 
             .text-center
-                .margin-bottom
+                .large-margin-bottom
                     h3 Greetings cards
-                    img.responsive-image(src="images/greetings-cards.jpg" style="width: 100%; max-width: 30rem" alt="Patterned greetings cards in lots of different colours")
+                    picture
+                        source(srcset="images/greetings-cards-300.webp 300w, images/greetings-cards-500.webp 500w, images/greetings-cards-1000.webp 1000w" type="image/webp")
+                        source(srcset="images/greetings-cards-300.jpg 300w, images/greetings-cards-500.jpg 500w, images/greetings-cards-1000.jpg 1000w" type="image/jpeg")
+                        img.responsive-image(src="images/greetings-cards.jpg" style="width: 100%; max-width: 30rem" alt="Patterned greetings cards in lots of different colours")
                     p £3 each / 4 for £10 
                     a.button(href=" mailto:hello@arramu.co.uk?subject=Greetings%20Cards%20Order&body=Thank%20you%20for%20contacting%20Arramu%20to%20order%20some%20greetings%20cards!%20Please%20write%20in%20this%20email%20how%20many%20you%20would%20like%20and%20your%20postal%20address%2C%20and%20we'll%20come%20back%20to%20as%20soon%20as%20we%20can%20to%20take%20your%20details%20%3A)" target="blank") Buy greetings cards
-                .margin-bottom
+                .large-margin-bottom
                     h3 Slate art
                     p We have a number of different slate pieces available with prices on request. Get in touch to see what we currently have available. 
                     .grid.small-col.margin-bottom
                         .image-container
-                            img.object-fit-cover(src="images/slate-for-sale-1.jpg" alt="Some carved slate with a wolf and the moon")
+                            picture
+                                source(srcset="images/slate-for-sale-1-300.webp 300w, images/slate-for-sale-1-500.webp 500w, images/slate-for-sale-1-1000.webp 1000w" type="image/webp")
+                                source(srcset="images/slate-for-sale-1-300.jpg 300w, images/slate-for-sale-1-500.jpg 500w, images/slate-for-sale-1-1000.jpg 1000w" type="image/jpeg")
+                                img.object-fit-cover(src="images/slate-for-sale-1.jpg" alt="Some carved slate with a wolf and the moon")
                         .image-container
-                            img.object-fit-cover(src="images/slate-for-sale-2.jpg" alt="A piece of floral slate with pattern")
+                            picture
+                                source(srcset="images/slate-for-sale-2-300.webp 300w, images/slate-for-sale-2-500.webp 500w, images/slate-for-sale-2-1000.webp 1000w" type="image/webp")
+                                source(srcset="images/slate-for-sale-2-300.jpg 300w, images/slate-for-sale-2-500.jpg 500w, images/slate-for-sale-2-1000.jpg 1000w" type="image/jpeg")
+                                img.object-fit-cover(src="images/slate-for-sale-2.jpg" alt="A piece of floral slate with pattern")
                     .grid.small-col.margin-bottom
                         .image-container
-                            img.object-fit-cover(src="images/slate-for-sale-3.jpg" alt="A piece of carved slate displayed in a case")
+                            picture
+                                source(srcset="images/slate-for-sale-3-300.webp 300w, images/slate-for-sale-3-500.webp 500w, images/slate-for-sale-3-1000.webp 1000w" type="image/webp")
+                                source(srcset="images/slate-for-sale-3-300.jpg 300w, images/slate-for-sale-3-500.jpg 500w, images/slate-for-sale-3-1000.jpg 1000w" type="image/jpeg")
+                                img.object-fit-cover(src="images/slate-for-sale-3.jpg" alt="A piece of carved slate displayed in a case")
                         .image-container
-                            img.object-fit-cover(src="images/slate-for-sale-4.jpg" alt="Some carved slate displayed on a plinth")
+                            picture
+                                source(srcset="images/slate-for-sale-4-300.webp 300w, images/slate-for-sale-4-500.webp 500w, images/slate-for-sale-4-1000.webp 1000w" type="image/webp")
+                                source(srcset="images/slate-for-sale-4-300.jpg 300w, images/slate-for-sale-4-500.jpg 500w, images/slate-for-sale-4-1000.jpg 1000w" type="image/jpeg")
+                                img.object-fit-cover(src="images/slate-for-sale-4.jpg" alt="Some carved slate displayed on a plinth")
                     a.button(href=" mailto:hello@arramu.co.uk?subject=Slate%20art%20enquiry&body=Thank%20you%20for%20enquiring%20about%20purchasing%20some%20slate%20art%20from%20Arramu!%20Please%20let%20us%20know%20what%20you%20are%20looking%20for%20in%20this%20email%20and%20we'll%20come%20back%20to%20you%20as%20soon%20as%20we%20can%20%3A) " target="blank") Enquire now
                 .margin-bottom
                     h3 Commissions
                     p We are available for personalised commissions for your business or home. We would love to hear about your ideas and requirements and see how we can help.
                     .commissions-gallery.margin-bottom
-                        .image-container.tall 
-                            img.object-fit-cover(src="images/commissions-1.jpg" alt="Jonny Scarramuzza with a large piece of carved slate")
+                        .image-container.tall
+                            picture
+                                source(srcset="images/commissions-1-300.webp 300w, images/commissions-1-500.webp 500w, images/commissions-1-1000.webp 1000w" type="image/webp")
+                                source(srcset="images/commissions-1-300.jpg 300w, images/commissions-1-500.jpg 500w, images/commissions-1-1000.jpg 1000w" type="image/jpeg")
+                                img.object-fit-cover(src="images/commissions-1.jpg" alt="Jonny Scarramuzza with a large piece of carved slate")
                         .image-container 
-                            img.object-fit-cover(src="images/commissions-2.jpg" alt="A piece of carved slate with the cafe name Artisans displayed with patterns")
+                            picture
+                                source(srcset="images/commissions-2-300.webp 300w, images/commissions-2-500.webp 500w, images/commissions-2-1000.webp 1000w" type="image/webp")
+                                source(srcset="images/commissions-2-300.jpg 300w, images/commissions-2-500.jpg 500w, images/commissions-2-1000.jpg 1000w" type="image/jpeg")
+                                img.object-fit-cover(src="images/commissions-2.jpg" alt="A piece of carved slate with the cafe name Artisans displayed with patterns")
                         .image-container 
-                            img.object-fit-cover(src="images/commissions-3.jpg" alt="A piece of carved slate with the name Cwtch Coner displayed with patterns")
+                            picture
+                                source(srcset="images/commissions-3-300.webp 300w, images/commissions-3-500.webp 500w, images/commissions-3-1000.webp 1000w" type="image/webp")
+                                source(srcset="images/commissions-3-300.jpg 300w, images/commissions-3-500.jpg 500w, images/commissions-3-1000.jpg 1000w" type="image/jpeg")
+                                img.object-fit-cover(src="images/commissions-3.jpg" alt="A piece of carved slate with the name Cwtch Coner displayed with patterns")
                     a.button(href=" mailto:hello@arramu.co.uk?subject=Commissions%20enquiry&body=Thank%20you%20for%20enquiring%20about%20making%20a%20commission%20from%20Arramu!%20Please%20give%20us%20a%20little%20bit%20of%20information%20in%20this%20email%20about%20what%20you%20are%20looking%20for%20and%20we'll%20come%20back%20to%20you%20as%20soon%20as%20we%20can%20%3A) " target="blank") Enquire now
         .content.margin-bottom
             .text-center
